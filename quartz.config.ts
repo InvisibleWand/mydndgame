@@ -6,7 +6,7 @@ import * as Plugin from "./quartz/plugins"
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
-const config: QuartzConfig = {
+export default {
   configuration: {
     pageTitle: "Quartz 4",
     pageTitleSuffix: "",
@@ -53,6 +53,9 @@ const config: QuartzConfig = {
       },
     },
   },
+
+  customCss: ["static/custom.css"],
+
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
@@ -88,11 +91,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
-  },
+  }
 }
-  customCss: ["static/custom.css"],
-
-export default config
