@@ -23,4 +23,3 @@ Welcome to the living codex of our campaign. This site is a growing archive of t
 - [📜 Session Logs](../session-logs/)
 - [🔗 Meta / Reference](../meta/)
 
-![force-css](/static/custom.css)
