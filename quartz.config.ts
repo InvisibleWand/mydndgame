@@ -93,5 +93,6 @@ const config: QuartzConfig = {
     ],
   },
 }
+  customCss: ["static/custom.css"],
 
 export default config
