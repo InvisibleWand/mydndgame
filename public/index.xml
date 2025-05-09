@@ -6,11 +6,17 @@
       <description>Last 10 notes on Quartz 4</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>index</title>
+    <title>Duke Roderick Galekin</title>
+    <link>https://quartz.jzhao.xyz/characters/Duke-Roderick-Galekin</link>
+    <guid>https://quartz.jzhao.xyz/characters/Duke-Roderick-Galekin</guid>
+    <description>Ruler of the Rybalkan Peninsula and co-conspirator in Zavare’s infernal rise.</description>
+    <pubDate>Fri, 09 May 2025 02:26:34 GMT</pubDate>
+  </item><item>
+    <title>Into Darkness</title>
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
-    <description>Welcome to My D&amp;D Codex This is the world as chronicled by Todd Everfall, resident ghost knife weirdo.</description>
-    <pubDate>Fri, 09 May 2025 01:44:53 GMT</pubDate>
+    <description>The campaign codex of Archie Balderk and company.</description>
+    <pubDate>Fri, 09 May 2025 02:26:34 GMT</pubDate>
   </item>
     </channel>
   </rss>

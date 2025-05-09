@@ -1,0 +1,86 @@
+
+/* === INTO DARKNESS - Custom Blue Fantasy Theme === */
+
+:root {
+  --background: #0a0e1a;
+  --primary: #8be3ff;
+  --accent: #52bfff;
+  --text: #dce8f5;
+  --muted: #7a91b2;
+  --link: #84d0ff;
+  --link-hover: #a8eaff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Merriweather', serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(138, 233, 255, 0.4);
+}
+
+nav, .sidebar {
+  background-color: #101828;
+  border: 1px solid #2c3e50;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(138, 233, 255, 0.2);
+}
+
+nav a, .sidebar a {
+  color: var(--text);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a:hover, .sidebar a:hover {
+  color: var(--accent);
+}
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  color: var(--muted);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+code, pre {
+  background-color: #1b2435;
+  color: #8be3ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Layout enhancements */
+.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.quick-reference, .library-section {
+  background-color: #121a26;
+  border: 1px solid #2c3e50;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 8px rgba(82, 191, 255, 0.3);
+}
+
+.quick-reference h3, .library-section h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
