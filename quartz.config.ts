@@ -54,7 +54,7 @@ export default {
     },
   },
 
-  customCss: ["static/custom.css"],
+  customCss: ["quartz/assets/custom.css"],
 
   plugins: {
     transformers: [
