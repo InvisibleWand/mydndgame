@@ -22,3 +22,5 @@ Welcome to the living codex of our campaign. This site is a growing archive of t
 - [🎭 Bardic Limericks](../limericks/)
 - [📜 Session Logs](../session-logs/)
 - [🔗 Meta / Reference](../meta/)
+
+![force-css](/static/custom.css)
