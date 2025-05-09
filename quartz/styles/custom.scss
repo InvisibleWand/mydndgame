@@ -1,59 +1,165 @@
 @use "./base.scss";
 
-// Layout base
+/* Base Styles */
 body {
-  background-color: #0b0d11;
-  color: #e0dcd4;
-  font-family: 'Merriweather', serif;
+    background-color: #1a1a1a;
+    color: #bcbcbc;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
 
-// Navigation sidebar boxes
-aside, .sidebar {
-  background-color: #111318;
-  border: 1px solid #2d2f36;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 10px rgba(20, 20, 25, 0.3);
+/* Container for the entire content */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.sidebar h2,
-.sidebar h3 {
-  font-variant: small-caps;
-  font-size: 1.1rem;
-  color: #e3733a;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 3px rgba(227, 115, 58, 0.4);
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.2rem;
+/* Header Styling */
+header {
+    background-color: #111;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #bcbcbc 3px solid;
 }
 
-// Main content container
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding-right: 20px;
+    position: relative;
+}
+
+header li:hover::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #bcbcbc;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+/* Main Content Area */
 main {
-  background-color: #16191e;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.03);
+    padding: 20px 0;
 }
 
-// Headings
-h1, h2, h3 {
-  color: #f4dfba;
-  font-family: 'Cinzel', serif;
-  text-shadow: 0 0 6px rgba(200, 180, 120, 0.4);
+/* Table of Contents */
+#toc {
+    float: right;
+    width: 30%;
+    background-color: #222;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid #444;
 }
 
-// Links
-a {
-  color: #7dd6ff;
-  text-decoration: none;
+#toc h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
+#toc ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#toc li {
+    margin-bottom: 5px;
+}
+
+#toc a {
+    color: #bcbcbc;
+    text-decoration: none;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}
+
+/* Page Content */
+#content {
+    float: left;
+    width: 65%;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    color: #ffcc00;
+}
+
+#content p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    clear: both;
+}
+
+/* Additional Effects */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...'); /* Replace with your own URL for a subtle noise texture */
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Hover effects for links */
 a:hover {
-  color: #b8ecff;
-  text-shadow: 0 0 4px rgba(125, 214, 255, 0.5);
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #ffcc00;
 }
 
+/* Subtle animations for tables */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+/* Make images slightly transparent */
+img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+img:hover {
+    opacity: 1;
+}
 .quick-reference h3, .library-section h3 {
   color: var(--accent);
   margin-top: 0;
